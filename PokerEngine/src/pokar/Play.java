@@ -6,7 +6,7 @@ public class Play {
 		// TODO Auto-generated method stub
 		Deck myDeck = new Deck();
 		myDeck.shuffle();
-		for(Card i : myDeck.getCardArray()){
+		for (Card i : myDeck.getCardArray()) {
 			System.out.println(i.toString());
 		}
 	}

@@ -2,7 +2,9 @@ package pokar;
 
 public class Hand {
 	private Card[] myHand;
-	public void printHand(){
+
+	public String toString() {
+		return "not finished";
 		// for card in card array:
 		// myHand[i].toString();
 	}
