@@ -1,24 +1,24 @@
 package pokar;
 
 public class Card {
-	private int rank;
-	private char suit;
+	// In class bert said to use numerics for all variables. Rank should be 0=2,
+	// 1=3, and so on with ace at the top I presume.
+	
+	//He said to use enumerators
+
+	private cardRank rank;
+	private Suit suit;
 
 	private boolean avail = true; // This variable determines if the card is
-									// drawn from the deck
+									// drawn from the deck yet
 
 	public int getRank() {
 		return rank;
 	}
 
-	// dont have to set rank
-
 	public char getSuit() {
 		return suit;
 	}
-
-	// removed setter, we don't have to change the suit of the card once it is
-	// constructed
 
 	public Card(int rank, char suit) {
 		this.rank = rank;

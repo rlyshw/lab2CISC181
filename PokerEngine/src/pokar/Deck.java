@@ -1,20 +1,23 @@
 package pokar;
 
-public class Deck {
-	private Card[] cardArray = new Card[52];
+import java.util.ArrayList;
 
-	public Card[] getCardArray() {
+public class Deck {
+	private ArrayList<Card> cardArray = new ArrayList<Card>();
+
+	public ArrayList<Card> getCardArray() {
 		return cardArray;
 	}
 
 	public Deck() {
 		// Todo: generate deck of 52 cards
-		for (int i = 1; i <= 13; i++) {
+		/* Commented out because this is assuming cardArray is an array not an arraylist
+		 *  for (int i = 1; i <= 13; i++) {
 			this.cardArray[i - 1] = new Card(i, 'S');
 			this.cardArray[i + 12] = new Card(i, 'D');
 			this.cardArray[i + 25] = new Card(i, 'H');
 			this.cardArray[i + 38] = new Card(i, 'C');
-		}
+		}*/
 	}
 
 	public Card draw() {
