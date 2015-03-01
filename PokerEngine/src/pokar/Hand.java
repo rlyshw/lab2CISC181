@@ -19,8 +19,14 @@ public class Hand {
 		}
 		return returnString;
 	}
-	public static void judgeHand(){
-		Collections.sort(handArray);
-		
+	
+	
+	
+	public void judgeHand(){
+		ArrayList<Integer> intArray = new ArrayList<Integer>();
+		for(Card i : handArray){
+			intArray.add(i.getRank().getCardValue());
+		}
+		System.out.println(intArray.get(0));
 	}
 }

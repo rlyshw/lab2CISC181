@@ -11,6 +11,8 @@ public class Play {
 		Hand myHand = new Hand(myDeck);
 		System.out.println("My Hand");
 		System.out.println(myHand.toString());
+		
+		myHand.judgeHand();
 	}
 
 }
