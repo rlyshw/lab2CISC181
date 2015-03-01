@@ -1,6 +1,7 @@
 package pokar;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Deck {
 	private ArrayList<Card> cardArray = new ArrayList<Card>();
@@ -24,36 +25,18 @@ public class Deck {
 				CardRank cardRank = CardRank.values()[i];
 				Card c = new Card(cardRank, suitRank);
 				cardArray.add(c);
+				Collections.shuffle(cardArray);
 				
 			}
 		}
 	}
 
 	public Card draw() {
-		// draws a card
-		for (Card i : cardArray) {
-			// returns the first card in the cardArray with i.isAvail()==true
-			if (i.isAvail())
-				return i;
-		}
-		return null; // if deck is empty, return null
-		// I like how this method must return type Card but it lets me return
-		// null. That's nifty.
+		
 	}
 
 	public int cardsLeft() {
-		// returns how many cards are left.
-		int cardsLeft = 0;
-		for (Card i : cardArray) {
-			// increments cardsLeft for every i.isAvail in cardArray
-			if (i.isAvail())
-				cardsLeft++;
-		}
-		return cardsLeft;
+		
 	}
 
-	public void shuffle() {
-		// this is a returnless procedure
-		// shuffles the current deck. Manipulate this.cardArray;
-	}
 }
