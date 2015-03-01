@@ -9,6 +9,7 @@ public class Play {
 			System.out.println(i.toString());
 		}
 		Hand myHand = new Hand(myDeck);
+		System.out.println("My Hand");
 		System.out.println(myHand.toString());
 	}
 
