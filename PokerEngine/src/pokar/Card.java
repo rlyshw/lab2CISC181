@@ -6,31 +6,24 @@ public class Card {
 	
 	//He said to use enumerators
 
-	private cardRank rank;
+	private CardRank rank;
 	private Suit suit;
 
-	private boolean avail = true; // This variable determines if the card is
-									// drawn from the deck yet
-
-	public int getRank() {
+	public CardRank getRank() {
 		return rank;
 	}
 
-	public char getSuit() {
+	public Suit getSuit() {
 		return suit;
 	}
 
-	public Card(int rank, char suit) {
+	public Card(CardRank rank, Suit suit) {
 		this.rank = rank;
 		this.suit = suit;
 	}
 
 	public String toString() {
 		return "Card [rank=" + rank + ", suit=" + suit + "]";
-	}
-
-	public boolean isAvail() {
-		return true;
 	}
 	
 }
