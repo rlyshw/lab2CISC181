@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Hand {
-	private ArrayList<Card> handArray = new ArrayList<Card>();
+	private static ArrayList<Card> handArray = new ArrayList<Card>();
 	
 	public Hand(Deck myDeck){
 		for(int i=0; i<5; i++){
@@ -19,9 +19,8 @@ public class Hand {
 		}
 		return returnString;
 	}
-	public static judgeHand(handArray){
+	public static void judgeHand(){
 		Collections.sort(handArray);
-		
 		
 	}
 }
