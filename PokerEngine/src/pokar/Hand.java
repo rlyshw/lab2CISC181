@@ -2,6 +2,7 @@ package pokar;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class Hand {
 	private static ArrayList<Card> handArray = new ArrayList<Card>();
@@ -23,10 +24,6 @@ public class Hand {
 	
 	
 	public void judgeHand(){
-		ArrayList<Integer> intArray = new ArrayList<Integer>();
-		for(Card i : handArray){
-			intArray.add(i.getRank().getCardValue());
-		}
-		System.out.println(intArray.get(0));
+		Collections.sort(handArray);
 	}
 }
