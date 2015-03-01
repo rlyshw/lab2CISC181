@@ -1,11 +1,21 @@
 package pokar;
 
-public class Hand {
-	private Card[] myHand;
+import java.util.ArrayList;
 
+public class Hand {
+	private ArrayList<Card> handArray = new ArrayList<Card>();
+	
+	public Hand(Deck myDeck){
+		for(int i=0; i<5; i++){
+			this.handArray.add(myDeck.draw());
+		}
+	}
+	
 	public String toString() {
-		return "not finished";
-		// for card in card array:
-		// myHand[i].toString();
+		String returnString = new String();
+		for(Card i: this.handArray){
+			returnString += i.toString() +"\n";
+		}
+		return returnString;
 	}
 }

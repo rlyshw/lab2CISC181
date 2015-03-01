@@ -8,6 +8,8 @@ public class Play {
 		for (Card i : myDeck.getCardArray()) {
 			System.out.println(i.toString());
 		}
+		Hand myHand = new Hand(myDeck);
+		System.out.println(myHand.toString());
 	}
 
 }
