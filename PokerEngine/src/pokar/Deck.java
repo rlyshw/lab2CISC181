@@ -22,8 +22,8 @@ public class Deck {
 			Suit suitRank = Suit.values()[j];
 			for(int i =0; i<14; i++){
 				CardRank cardRank = CardRank.values()[i];
-				card c = new card(suitRank, cardRank);
-				cardArray.asdd(c)
+				Card c = new Card(cardRank, suitRank);
+				cardArray.add(c);
 				
 			}
 		}
