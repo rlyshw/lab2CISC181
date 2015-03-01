@@ -18,6 +18,14 @@ public class Deck {
 			this.cardArray[i + 25] = new Card(i, 'H');
 			this.cardArray[i + 38] = new Card(i, 'C');
 		}*/
+		for(int j = 1; j<=4; j++){
+			for(int i = 1; i<=13;i++ ){
+				this.cardArray[i-1] = new Card(i, 'C');
+				this.cardArray[i+12] = new Card(i, 'D');
+				this.cardArray[i+25] = new Card(i, 'H');
+				this.cardArray[i+38} = new Card(i, 'S');]
+			}
+		}
 	}
 
 	public Card draw() {
