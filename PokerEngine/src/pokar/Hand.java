@@ -1,6 +1,7 @@
 package pokar;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Hand {
 	private ArrayList<Card> handArray = new ArrayList<Card>();
@@ -17,5 +18,10 @@ public class Hand {
 			returnString += i.toString() +"\n";
 		}
 		return returnString;
+	}
+	public static judgeHand(handArray){
+		Collections.sort(handArray);
+		
+		
 	}
 }
