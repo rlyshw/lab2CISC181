@@ -11,9 +11,9 @@ public class Deck {
 	}
 
 	public Deck() {
-		for(int j = 0; j<=4; j++){
+		for(int j = 0; j<4; j++){
 			Suit suitRank = Suit.values()[j];
-			for(int i =0; i<14; i++){
+			for(int i =0; i<13; i++){
 				CardRank cardRank = CardRank.values()[i];
 				Card c = new Card(cardRank, suitRank);
 				cardArray.add(c);
