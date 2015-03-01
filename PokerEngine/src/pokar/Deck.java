@@ -26,17 +26,18 @@ public class Deck {
 				Card c = new Card(cardRank, suitRank);
 				cardArray.add(c);
 				Collections.shuffle(cardArray);
-				
 			}
 		}
 	}
 
 	public Card draw() {
-		
+		Card c = cardArray.get(0);
+		cardArray.remove(0);
+		return c;
 	}
 
 	public int cardsLeft() {
-		
+		return cardArray.size();
 	}
 
 }
