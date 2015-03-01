@@ -32,4 +32,5 @@ public class Card {
 	public boolean isAvail() {
 		return true;
 	}
+	
 }
