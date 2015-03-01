@@ -15,14 +15,14 @@ public enum CardRank {
 	KING(13),
 	ACE(14);
 	
-	private int cardValue;
+	private int cardRank;
 	
-	private CardRank(int value){
-		this.cardValue = value;
+	private CardRank(int rank){
+		this.cardRank = rank;
 	}
 
 	public int getCardValue(){
-		return cardValue;
+		return cardRank;
 	}
 	
 
