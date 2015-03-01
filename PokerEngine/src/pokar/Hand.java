@@ -7,6 +7,7 @@ import java.util.List;
 public class Hand {
 	private static ArrayList<Card> handArray = new ArrayList<Card>();
 	
+	
 	public Hand(Deck myDeck){
 		for(int i=0; i<5; i++){
 			this.handArray.add(myDeck.draw());
@@ -25,5 +26,10 @@ public class Hand {
 	
 	public void judgeHand(){
 		Collections.sort(handArray);
+		ArrayList<Card> highCard = new ArrayList<Card>();
+		ArrayList<Card> lowCard = new ArrayList<Card>();
+		ArrayList<Card> kicker = new ArrayList<Card>();
+		
+		
 	}
 }
