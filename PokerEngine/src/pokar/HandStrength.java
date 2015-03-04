@@ -9,7 +9,8 @@ public enum HandStrength {
 	FULLHOUSE(7),
 	FOUROFAKIND(8),
 	STRAIGHTFLUSH(9),
-	ROYALFLUSH(10);
+	FIVEOFAKIND(10),
+	ROYALFLUSH(11);
 	
 	private int handStrength;
 
