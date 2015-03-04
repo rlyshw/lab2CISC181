@@ -23,7 +23,7 @@ public class Hand {
 
 	public void judgeHand() {
 		Collections.sort(handArray);
-		/*
+		/* Only top 3 cases for this lab
 		 * 1. Hand Strength (eg. 2 pair of 7s and 3s vs 2 pair of 6s and 4s)
 		 * 2. High Hand (the 7s in the 2 pair vs the 6s)
 		 * 3. Low Hand (3s vs 4s)
