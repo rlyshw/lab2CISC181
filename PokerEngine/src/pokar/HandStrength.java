@@ -18,7 +18,7 @@ public enum HandStrength {
 		this.handStrength = handStrength;
 	
 	}
-	public int gethandStrength9(){
+	public int gethandStrength(){
 		return handStrength;
 	}
 	

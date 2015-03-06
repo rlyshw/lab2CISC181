@@ -37,6 +37,8 @@ public class Hand {
 		 */ 
 		boolean sameSuit = false;
 		Suit firstCardSuit = handArray.get(0).getSuit();
+		CardRank firstCardRank = handArray.get(0).getRank();
+		CardRank secondCardRank = handArray.get(1).getRank();
 		
 		for(int i =0, r = 10  ; i<5 && r< 15; i++, r++){
 			if(handArray.get(i).getSuit() != firstCardSuit) {
@@ -47,11 +49,32 @@ public class Hand {
 		if(sameSuit == true){
 			if(handArray.get(0).getRank() == CardRank.TEN && handArray.get(4).getRank() == CardRank.ACE ) {
 				strength = HandStrength.ROYALFLUSH;
+				//No highhand/lowhand/kicker
+				ArrayList<Card> highCard = null;
+				ArrayList<Card> lowCard = null;
+				ArrayList<Card> kicker = null;
+				
 			}
-			if(handArray.get(4).getRank().getCardValue() - handArray.get(0).getRank().getCardValue() == 4) {
+			else if(handArray.get(4).getRank().getCardValue() - handArray.get(0).getRank().getCardValue() == 4) {
 				strength = HandStrength.STRAIGHTFLUSH;				
+				//No highhand/lowhand/kicker
+				ArrayList<Card> highCard = null;
+				ArrayList<Card> lowCard = null;
+				ArrayList<Card> kicker = null;
 			}
 
+		}
+		if(sameSuit != true){
+			if(firstCardRank == handArray.get(3).getRank()){
+				strength = HandStrength.FOUROFAKIND;
+				kicker[0] = handArray.get(4).getRank(); //Add the 5th card to the kicker array. or the low card array, not too sure.
+						
+			}
+			else if (secondCardRank == handArray.get(4).getRank(){
+				strength = HandStrength.FOUROFAKIND;
+				kicker[0] = handArray.get(0).getRank(); //Add the first card to the kicker array, or the low card array. 
+			}
+			
 		}
 		
 		ArrayList<Card> highCard = new ArrayList<Card>();
