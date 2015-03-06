@@ -40,7 +40,7 @@ public class Hand {
 		CardRank firstCardRank = handArray.get(0).getRank();
 		CardRank secondCardRank = handArray.get(1).getRank();
 		
-		for(int i =0, r = 10  ; i<5 && r< 15; i++, r++){
+		for(int i =0; i<5 ; i++){
 			if(handArray.get(i).getSuit() != firstCardSuit) {
 				break;
 			}
@@ -68,6 +68,7 @@ public class Hand {
 			if(firstCardRank == handArray.get(3).getRank()){
 				strength = HandStrength.FOUROFAKIND;
 				kicker[0] = handArray.get(4).getRank(); //Add the 5th card to the kicker array. or the low card array, not too sure.
+				kicker.
 						
 			}
 			else if (secondCardRank == handArray.get(4).getRank(){
