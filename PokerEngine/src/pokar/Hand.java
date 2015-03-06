@@ -81,7 +81,7 @@ public class Hand {
 				
 						
 			}
-			else if (secondCardRank == handArray.get(4).getRank(){
+			else if (secondCardRank == handArray.get(4).getRank()){
 				strength = HandStrength.FOUROFAKIND;
 				//kicker[0] = handArray.get(0).getRank(); //Add the first card to the kicker array, or the low card array. 
 				this.kicker.add(0, handArray.get(0));
