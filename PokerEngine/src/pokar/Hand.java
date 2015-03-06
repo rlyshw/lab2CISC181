@@ -54,30 +54,40 @@ public class Hand {
 			if(handArray.get(0).getRank() == CardRank.TEN && handArray.get(4).getRank() == CardRank.ACE ) {
 				strength = HandStrength.ROYALFLUSH;
 				//No highhand/lowhand/kicker
-				ArrayList<Card> highCard = null;
-				ArrayList<Card> lowCard = null;
-				ArrayList<Card> kicker = null;
+				this.highCard = null;
+				this.lowCard = null;
+				this.kicker = null;
 				
 			}
 			else if(handArray.get(4).getRank().getCardValue() - handArray.get(0).getRank().getCardValue() == 4) {
 				strength = HandStrength.STRAIGHTFLUSH;				
 				//No highhand/lowhand/kicker
-				ArrayList<Card> highCard = null;
-				ArrayList<Card> lowCard = null;
-				ArrayList<Card> kicker = null;
+				this.highCard = null;
+				this.lowCard = null;
+				this.kicker = null;
 			}
 
 		}
 		if(sameSuit != true){
 			if(firstCardRank == handArray.get(3).getRank()){
 				strength = HandStrength.FOUROFAKIND;
-				kicker[0] = handArray.get(4).getRank(); //Add the 5th card to the kicker array. or the low card array, not too sure.
-				kicker.
+				// kicker[0] = handArray.get(4).getRank(); Add the 5th card to the kicker array. or the low card array, not too sure.
+				this.kicker.add(0, handArray.get(4));
+				this.highCard = null;
+				this.lowCard = null;
+				
+				
+				
+				
 						
 			}
 			else if (secondCardRank == handArray.get(4).getRank(){
 				strength = HandStrength.FOUROFAKIND;
-				kicker[0] = handArray.get(0).getRank(); //Add the first card to the kicker array, or the low card array. 
+				//kicker[0] = handArray.get(0).getRank(); //Add the first card to the kicker array, or the low card array. 
+				this.kicker.add(0, handArray.get(0));
+				this.highCard = null;
+				this.lowCard = null;
+				
 			}
 			
 		}
