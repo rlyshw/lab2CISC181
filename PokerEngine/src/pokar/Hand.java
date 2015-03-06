@@ -6,6 +6,10 @@ import java.util.List;
 
 public class Hand {
 	private static ArrayList<Card> handArray = new ArrayList<Card>();
+	private static ArrayList<Card> highCard = new ArrayList<Card>();
+	private static ArrayList<Card> lowCard = new ArrayList<Card>();
+	private static ArrayList<Card> kicker = new ArrayList<Card>();
+	
 	private HandStrength strength;
 
 	public Hand(Deck myDeck) {
@@ -77,9 +81,7 @@ public class Hand {
 			
 		}
 		
-		ArrayList<Card> highCard = new ArrayList<Card>();
-		ArrayList<Card> lowCard = new ArrayList<Card>();
-		ArrayList<Card> kicker = new ArrayList<Card>();
+		
 
 	}
 }
