@@ -13,7 +13,7 @@ public class Play {
 		System.out.println("My Hand(unsorted)");
 		System.out.println(myHand.toString());
 		
-		myHand.judgeHand();
+		System.out.println("Hand Score: "+Hand.judgeHand(myHand));
 		System.out.println("My Hand(sorted?)");
 		System.out.println(myHand.toString());
 	}

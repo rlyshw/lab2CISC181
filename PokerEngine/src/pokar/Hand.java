@@ -24,7 +24,7 @@ public class Hand {
 		return returnString;
 	}
 
-	public static void judgeHand() {
+	public static HandStrength judgeHand(Hand testHand) {
 		Collections.sort(handArray);
 
 		HandStrength strength = null;
@@ -87,6 +87,7 @@ public class Hand {
 			}
 
 		}
+		return strength;
 
 	}
 }
